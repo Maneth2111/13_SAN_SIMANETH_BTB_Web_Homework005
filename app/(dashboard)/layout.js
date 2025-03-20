@@ -13,7 +13,9 @@ export default function DashboardLayout({children}) {
         </aside>
 
       <section className="col-span-9  px-10">
-        <SearchNavbar />
+        <div className="py-5">
+          <SearchNavbar />
+        </div>
         <div className="bg-white rounded-2xl w-full h-full mt-7 p-4">
           {children}
         </div>

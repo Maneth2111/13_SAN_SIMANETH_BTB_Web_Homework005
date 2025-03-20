@@ -1,15 +1,10 @@
-"use client"
-import BookCard from "@/components/allCard/book-card";
-import Image from "next/image";
-// import { Card, CardHeader, CardBody } from "@heroui/react";
-// import img from "@/asset/book1.png"
 
-export default function BooksPage() {
-
+import { Card, CardHeader, CardBody } from "@heroui/react";
+import img from "@/asset/book1.png"
+export default function BookCard() {
   return (
-      <>
-      <div>Book Page</div>
-      {/* <Card className="py-4 grid grid-cols-2 bg-red-300 w-3/6">
+    <>
+    <Card className="py-4 grid grid-cols-2 bg-red-300 w-3/6">
       <CardHeader className="overflow-visible py-2">
         <Image
           alt="Card background"
@@ -25,7 +20,7 @@ export default function BooksPage() {
           <small className="">12 Tracks</small>
           </div>
       </CardBody>
-    </Card> */}
-      </>
-  );
+    </Card>
+    </>
+  )
 }
