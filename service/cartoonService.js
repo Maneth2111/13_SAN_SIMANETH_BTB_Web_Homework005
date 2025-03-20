@@ -3,3 +3,4 @@ export async function getAllCartoons() {
     const cartoons = await res.json();
     return cartoons.payload;
   }
+

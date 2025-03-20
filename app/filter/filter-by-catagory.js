@@ -1,18 +1,28 @@
-
-
+"use client"
+import {Select, SelectItem} from "@heroui/react";
 export default function FilterByCatagory() {
+  const options =[   
+    {key: "book1", label: "Comedy "},
+    {key: "book2", label: "Action & Adventure "},
+    {key: "book3", label: "Fantasy & Sci-Fi"},
+    {key: "book4", label: "Superhero "},
+    {key: "book5", label: "Slice of Life"},
+    {key: "book6", label: "Educational "},
+    {key: "book7", label: "Horror/Mystery "},
+
+];
   return (
     <>
-    {/* <Autocomplete
+    <Select
+      isRequired
       className="max-w-xs"
-      defaultItems={animals}
-      defaultSelectedKey="cat"
-      description="The second most popular pet in the world"
-      label="Favorite Animal"
-      placeholder="Search an animal"
+      defaultSelectedKeys={["Comedy"]}
+      placeholder="filter by Cetagory"
     >
-      {(item) => <AutocompleteItem key={item.key}>{item.label}</AutocompleteItem>}
-    </Autocomplete>       */}
+      {options.map((option) => (
+        <SelectItem key={option.key}>{option.label}</SelectItem>
+      ))}
+    </Select>
     </>
   )
 }

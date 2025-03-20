@@ -18,7 +18,6 @@ export default function HomePage() {
         <div className="mb-4 p-4 bg-gray-100 rounded-md shadow-md">
           <h1 className="text-xl font-bold text-gray-700">Homepage</h1>
         </div>
-
         <div className="flex justify-around">
           {items.map((item) => (
             <Link href={item.link} key={item.id} className="rounded-lg shadow-md relative group">
