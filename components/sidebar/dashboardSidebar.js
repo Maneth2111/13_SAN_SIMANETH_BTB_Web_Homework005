@@ -55,7 +55,6 @@ export default function DashboardSidebar() {
                 <span className="ml-2 text-sm font-medium">{item.label}</span>
               </Link>
             ) : (
-              // Static
               <div
                 key={index}
                 className="flex items-center w-full h-12 px-3 mt-0.5 rounded hover:bg-gray-300"
