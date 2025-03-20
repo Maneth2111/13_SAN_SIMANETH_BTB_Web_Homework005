@@ -2,8 +2,6 @@
 import SearchNavbar from "@/components/searchNavbar/search-navbar";
 import DashboardSidebar from "@/components/sidebar/dashboardSidebar";
 
-
-
 export default function DashboardLayout({children}) {
   return (
     <>
@@ -11,7 +9,6 @@ export default function DashboardLayout({children}) {
         <aside className="col-span-3">
           <DashboardSidebar />
         </aside>
-
       <section className="col-span-9  px-10">
         <div className="py-5">
           <SearchNavbar />

@@ -1,13 +1,13 @@
-"use client"
-import BookCard from "@/components/allCard/book-card";
-import Image from "next/image";
 
-export default function BooksPage() {
-  
 
+import { getAllBooks } from '@/service/bookService'
+
+export default async function BooksPage() {
+  console.log(await getAllBooks());
   return (
       <>
       <div>Book Page</div>
+        
 
       </>
   );

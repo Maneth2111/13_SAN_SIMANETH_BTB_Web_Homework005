@@ -1,6 +1,5 @@
 export async function getAllBooks() {
-  const res = await fetch(`https://nextjs-homework005.vercel.app/api/book`);
+  const res = await fetch(`${process.env.NEXT_PUBLIC_BASE_URL}/book`);
   const books = await res.json();
-  console.log(`books`,books);
   return books.payload;
 }
