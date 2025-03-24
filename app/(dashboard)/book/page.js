@@ -1,6 +1,6 @@
 
 
-import FilterByCatagory from '@/app/filter/filter-by-catagory';
+import FilterByCatagory from '@/components/filter/filter-by-catagory';
 import BookCard from '@/components/allCard/book-card';
 import { getAllBooks } from '@/service/bookService'
 

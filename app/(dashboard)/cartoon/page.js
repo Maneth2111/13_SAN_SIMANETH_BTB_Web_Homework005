@@ -1,5 +1,5 @@
 
-import FilterByCatagory from "@/app/filter/filter-by-catagory";
+import FilterByCatagory from "@/components/filter/filter-by-catagory";
 import CartoonCard from "@/components/allCard/cartoon-card";
 import { getAllCartoons } from "@/service/cartoonService"
 
